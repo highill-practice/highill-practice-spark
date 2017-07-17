@@ -14,7 +14,7 @@ public class SparkContextVerify {
 	public void sparkContext() {
 		String appName = "highill-practice-sprak-junit";
 		String master = "local[*]";
-		JavaSparkContext sparkContext = SparkContext.javaSparkContext(appName, master);
+		JavaSparkContext sparkContext = JavaRDDSparkContextMain.javaSparkContext(appName, master);
 		
 		System.out.println("-----sparkContext: " + sparkContext);
 		System.out.println("-----sparkHome: " + sparkContext.getSparkHome());

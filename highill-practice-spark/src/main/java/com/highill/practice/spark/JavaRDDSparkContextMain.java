@@ -9,7 +9,7 @@ import org.apache.spark.SparkConf;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
 
-public class SparkContext {
+public class JavaRDDSparkContextMain {
 
 	public static JavaSparkContext javaSparkContext(String appName, String master) {
 		JavaSparkContext sparkContext = null;
@@ -45,11 +45,11 @@ public class SparkContext {
 		System.out.println("-----rddInteger take 2: " + rddInteger.take(2));
 		System.out.println("-----rddInteger countByKey: " + rddInteger.countByValue());
 
-		System.out.println("-----rddInteger map: " + rddInteger.map(v -> (v.toString())).collect());
+		System.out.println("-----rddInteger map: " + rddInteger.map(v -> ("map" + v)).collect());
 		
-		JavaRDD<Integer> rddFlatMap = rddInteger.flatMap(v -> {
-			Set<Integer> set = new HashSet<Integer>();
-			set.add(v);
+		JavaRDD<String> rddFlatMap = rddInteger.flatMap(v -> {
+			Set<String> set = new HashSet<String>();
+			set.add("flatMap" + v);
 			return set.iterator();
 		});
 		System.out.println("-----rddInteger flatMap: " + rddFlatMap.collect());

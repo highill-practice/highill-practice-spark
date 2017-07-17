@@ -12,11 +12,18 @@ Spark master url: http://spark.apache.org/docs/2.1.0/submitting-applications.htm
 - http://spark.apache.org/docs/2.1.0/  
 - http://spark.apache.org/docs/2.1.0/quick-start.html  
 - http://spark.apache.org/docs/2.1.0/programming-guide.html  
+- http://spark.apache.org/docs/2.1.0/streaming-programming-guide.html  
+- http://spark.apache.org/docs/2.1.0/sql-programming-guide.html  
+- http://spark.apache.org/docs/2.1.0/ml-guide.html  
+- http://spark.apache.org/docs/2.1.0/graphx-programming-guide.html  
+
 
 
 # Maven依赖  
 
 - http://mvnrepository.com/artifact/org.apache.spark/spark-core_2.11/2.1.1  
+- http://mvnrepository.com/artifact/org.apache.spark/spark-sql_2.11/2.1.1  
+
 
 
 
