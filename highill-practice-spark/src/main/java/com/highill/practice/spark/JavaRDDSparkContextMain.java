@@ -10,6 +10,17 @@ import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
 
 public class JavaRDDSparkContextMain {
+	
+	public static SparkConf sparkConf(String appName, String master) {
+		SparkConf sparkConf = null;
+		if(appName != null && master != null) {
+			sparkConf = new SparkConf();
+			sparkConf.setAppName(appName);
+			sparkConf.setMaster(master);
+		}
+		
+		return sparkConf;
+	}
 
 	public static JavaSparkContext javaSparkContext(String appName, String master) {
 		JavaSparkContext sparkContext = null;
