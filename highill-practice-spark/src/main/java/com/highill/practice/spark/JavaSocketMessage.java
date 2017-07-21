@@ -11,7 +11,7 @@ public class JavaSocketMessage {
 
 	public static void main(String[] args) {
 		try {
-	        Socket clientSocket = new Socket("127.0.0.1", 9999);
+	        Socket clientSocket = new Socket("192.168.1.105", 9999);
 	        
 	        OutputStream outputStream = clientSocket.getOutputStream();
 	        PrintWriter printWriter = new PrintWriter(outputStream);

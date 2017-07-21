@@ -5,6 +5,8 @@ Spark SQL, Spark MLLib, Spark GraphX, Spark Streaming
 
 Spark master url: http://spark.apache.org/docs/2.1.0/submitting-applications.html#master-urls  
 
+https://github.com/apache/spark/tree/master/examples/src/main/java/org/apache/spark/examples
+
 
 # document  
 
@@ -24,6 +26,8 @@ Spark master url: http://spark.apache.org/docs/2.1.0/submitting-applications.htm
 - http://mvnrepository.com/artifact/org.apache.spark/spark-core_2.11/2.1.1  
 - http://mvnrepository.com/artifact/org.apache.spark/spark-sql_2.11/2.1.1  
 - http://mvnrepository.com/artifact/org.apache.spark/spark-streaming_2.11/2.1.1  
+- http://mvnrepository.com/artifact/org.apache.spark/spark-graphx_2.11/2.1.1  
+
 
 
 
