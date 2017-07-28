@@ -1,0 +1,5 @@
+true, 0.1
+false, 0.2 
+t, 0.3
+TRUE,0.4
+True, 0.5
