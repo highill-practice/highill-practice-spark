@@ -7,6 +7,9 @@ Spark master url: http://spark.apache.org/docs/2.1.0/submitting-applications.htm
 
 https://github.com/apache/spark/tree/master/examples/src/main/java/org/apache/spark/examples
 
+https://github.com/apache/spark/tree/master/data/mllib  
+
+
 
 # document  
 
