@@ -9,6 +9,11 @@ import org.apache.spark.mllib.linalg.Vectors;
 
 import com.highill.practice.spark.JavaRDDSparkContextMain;
 
+/**
+ * 
+ * http://spark.apache.org/docs/2.1.0/mllib-clustering.html#gaussian-mixture
+ *
+ */
 public class SparkMLClusteringGaussianMixture {
 
 	public static void main(String[] args) {

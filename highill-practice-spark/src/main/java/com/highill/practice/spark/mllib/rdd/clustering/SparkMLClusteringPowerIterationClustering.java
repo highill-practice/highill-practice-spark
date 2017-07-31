@@ -10,6 +10,11 @@ import scala.Tuple3;
 import com.google.common.collect.Lists;
 import com.highill.practice.spark.JavaRDDSparkContextMain;
 
+/**
+ * 
+ * http://spark.apache.org/docs/2.1.0/mllib-clustering.html#power-iteration-clustering-pic
+ *
+ */
 public class SparkMLClusteringPowerIterationClustering {
 
 	public static void main(String[] args) {

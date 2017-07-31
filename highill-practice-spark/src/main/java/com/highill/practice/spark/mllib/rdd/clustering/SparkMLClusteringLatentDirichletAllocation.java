@@ -13,6 +13,11 @@ import scala.Tuple2;
 
 import com.highill.practice.spark.JavaRDDSparkContextMain;
 
+/**
+ * 
+ * http://spark.apache.org/docs/2.1.0/mllib-clustering.html#latent-dirichlet-allocation-lda
+ *
+ */
 public class SparkMLClusteringLatentDirichletAllocation {
 
 	public static void main(String[] args) {
