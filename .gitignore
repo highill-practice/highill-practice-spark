@@ -9,6 +9,9 @@
 .settings/
 target/
 
+# demo data
+*.demo
+
 
 # Log file
 *.log

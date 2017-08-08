@@ -21,9 +21,11 @@ public class SparkMLDecisionTreeClassification {
 	public static void main(String[] args) {
 		JavaSparkContext javaSparkContext = JavaRDDSparkContextMain.javaSparkContext("SparkMLDecisionTreeClassification", "local[*]");
 		SparkContext sparkContext = javaSparkContext.sc();
+		// SVM Light
 		String dataPath = "data/mllib/sample_libsvm_data.txt";
 		JavaRDD<LabeledPoint> labeledData = MLUtils.loadLibSVMFile(sparkContext, dataPath).toJavaRDD();
 		System.out.println("-----labeledPoint count: " + labeledData.count());
+		System.out.println("-----labeledPoint take: " + labeledData.take(1));
 		
 		// Split the data into training and test (30% held out for testing)
 		JavaRDD<LabeledPoint>[] splitArray = labeledData.randomSplit(new double[]{0.7, 0.3});
